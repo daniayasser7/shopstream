@@ -1,0 +1,104 @@
+
+
+:root {
+  /* --- Our design tokens (one place to change a color) --- */
+  --ss-primary: #3525cd;
+  --ss-primary-light: #4f46e5;
+  --ss-primary-dark: #2a1da8;
+  --ss-success: #006c49;
+  --ss-mint: #6cf8bb;
+  --ss-danger: #ba1a1a;
+  --ss-bg: #f8f9ff;
+  --ss-surface: #eff4ff;
+  --ss-border: #d9e3f6;
+  --ss-text: #121c2a;
+  --ss-text-muted: #464555;
+  --ss-dark: #27313f;
+
+  /* --- Hand our tokens to Bootstrap --- */
+  --bs-primary: var(--ss-primary);
+  --bs-primary-rgb: 53, 37, 205;
+  --bs-success: var(--ss-success);
+  --bs-success-rgb: 0, 108, 73;
+  --bs-danger: var(--ss-danger);
+  --bs-danger-rgb: 186, 26, 26;
+
+  --bs-body-bg: var(--ss-bg);
+  --bs-body-color: var(--ss-text);
+  --bs-secondary-color: var(--ss-text-muted);
+  --bs-border-color: var(--ss-border);
+
+  --bs-link-color: var(--ss-primary);
+  --bs-link-color-rgb: 53, 37, 205;
+  --bs-link-hover-color: var(--ss-primary-light);
+  --bs-link-hover-color-rgb: 79, 70, 229;
+
+  --bs-body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-lg: 0.75rem;
+}
+
+/* --- Buttons: Bootstrap gives each button style its own variables --- */
+.btn {
+  font-weight: 600;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--ss-primary);
+  --bs-btn-border-color: var(--ss-primary);
+  --bs-btn-hover-bg: var(--ss-primary-dark);
+  --bs-btn-hover-border-color: var(--ss-primary-dark);
+  --bs-btn-active-bg: var(--ss-primary-dark);
+  --bs-btn-active-border-color: var(--ss-primary-dark);
+  --bs-btn-disabled-bg: var(--ss-primary);
+  --bs-btn-disabled-border-color: var(--ss-primary);
+  --bs-btn-focus-shadow-rgb: 53, 37, 205;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--ss-primary);
+  --bs-btn-border-color: var(--ss-primary);
+  --bs-btn-hover-bg: var(--ss-primary);
+  --bs-btn-hover-border-color: var(--ss-primary);
+  --bs-btn-active-bg: var(--ss-primary-dark);
+  --bs-btn-active-border-color: var(--ss-primary-dark);
+  --bs-btn-focus-shadow-rgb: 53, 37, 205;
+}
+
+.btn-success {
+  --bs-btn-bg: var(--ss-success);
+  --bs-btn-border-color: var(--ss-success);
+  --bs-btn-hover-bg: #005538;
+  --bs-btn-hover-border-color: #005538;
+  --bs-btn-active-bg: #005538;
+  --bs-btn-active-border-color: #005538;
+}
+
+.btn-danger {
+  --bs-btn-bg: var(--ss-danger);
+  --bs-btn-border-color: var(--ss-danger);
+  --bs-btn-hover-bg: #93000a;
+  --bs-btn-hover-border-color: #93000a;
+  --bs-btn-active-bg: #93000a;
+  --bs-btn-active-border-color: #93000a;
+}
+
+/* --- Form fields: indigo focus ring instead of Bootstrap blue --- */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--ss-primary-light);
+  box-shadow: 0 0 0 0.25rem rgba(53, 37, 205, 0.15);
+}
+
+.form-check-input:checked {
+  background-color: var(--ss-primary);
+  border-color: var(--ss-primary);
+}
+
+/* --- Pagination: indigo active page --- */
+.pagination {
+  --bs-pagination-color: var(--ss-text);
+  --bs-pagination-active-bg: var(--ss-primary);
+  --bs-pagination-active-border-color: var(--ss-primary);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(53, 37, 205, 0.15);
+}
