@@ -9,7 +9,7 @@ A responsive e-commerce frontend built with **React** and **React Bootstrap**, c
 | Role  | Username        | Password        | Dashboard access |
 |-------|-----------------|-----------------|------------------|
 | Admin | `emilys`        | `emilyspass`    | Yes              |
-| User  | `USER_USERNAME` | `USER_PASSWORD` | No               |
+| User  | `averyp` | `averyppass` | No               |
 
 Any other DummyJSON user also works. Credentials are listed at <https://dummyjson.com/users?select=username,password,role>. You can sign in with a username or an email address.
 
