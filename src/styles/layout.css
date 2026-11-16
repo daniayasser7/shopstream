@@ -1,0 +1,122 @@
+.ss-brand {
+  color: var(--ss-primary);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.ss-brand:hover {
+  color: var(--ss-primary);
+}
+
+.ss-navbar {
+  background-color: var(--ss-bg);
+  border-bottom: 1px solid var(--ss-border);
+}
+
+.ss-navbar .nav-link {
+  color: var(--ss-text-muted);
+  font-weight: 500;
+  padding: 0.25rem 0;
+  margin-right: 1.75rem;
+  border-bottom: 2px solid transparent;
+}
+.ss-navbar .nav-link:hover {
+  color: var(--ss-primary);
+}
+.ss-navbar .nav-link.active {
+  color: var(--ss-primary);
+  font-weight: 600;
+  border-bottom-color: var(--ss-primary);
+}
+
+.ss-navbar .ss-icon-link {
+  margin-right: 0;
+  border-bottom: 0;
+  color: var(--ss-text);
+}
+.ss-navbar .ss-icon-link.active,
+.ss-navbar .ss-icon-link:hover {
+  color: var(--ss-primary);
+}
+
+.ss-search {
+  position: relative;
+}
+.ss-search .form-control {
+  border-radius: 999px;
+  padding-left: 2.5rem;
+  background-color: var(--ss-surface);
+  border-color: var(--ss-border);
+}
+.ss-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ss-text-muted);
+  pointer-events: none;
+}
+@media (min-width: 992px) {
+  .ss-search .form-control {
+    width: 320px;
+  }
+}
+
+.ss-footer {
+  background-color: var(--ss-border);
+  color: var(--ss-text-muted);
+}
+
+.ss-offcanvas {
+  --bs-offcanvas-bg: var(--ss-surface);
+}
+
+@media (min-width: 992px) {
+  .ss-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    background-color: var(--ss-surface);
+    border-right: 1px solid var(--ss-border);
+  }
+
+  .ss-sidebar .offcanvas-lg,
+  .ss-sidebar .offcanvas-body {
+    height: 100%;
+  }
+}
+
+.ss-sidebar-user {
+  background-color: #fff;
+  border: 1px solid var(--ss-border);
+  border-radius: var(--bs-border-radius-lg);
+}
+.ss-sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--ss-text-muted);
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: var(--bs-border-radius);
+}
+.ss-sidebar .nav-link:hover {
+  background-color: rgba(53, 37, 205, 0.08);
+  color: var(--ss-primary);
+}
+.ss-sidebar .nav-link.active {
+  background-color: var(--ss-primary-light);
+  color: #fff;
+}
+
+.ss-dashboard-main {
+  min-width: 0;
+}
+.ss-dashboard-topbar {
+  background-color: var(--ss-bg);
+  border-bottom: 1px solid var(--ss-border);
+}
