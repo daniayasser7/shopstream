@@ -2,7 +2,7 @@
 
 A responsive e-commerce frontend built with **React** and **React Bootstrap**, connected to the **[DummyJSON](https://dummyjson.com)** API. It covers authentication, product browsing with search, filtering, sorting and pagination, cart management, user management, and an admin dashboard with full CRUD for products, carts and users.
 
-**Live demo:** DEMO_LINK_HERE
+**Live demo:** https://shopstream-zeta.vercel.app
 
 ## Demo accounts
 
