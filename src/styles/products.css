@@ -1,0 +1,253 @@
+.ss-filter-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ss-text-muted);
+  margin-bottom: 1rem;
+}
+
+.ss-filter-list {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.ss-btn-soft {
+  --bs-btn-bg: var(--ss-border);
+  --bs-btn-border-color: var(--ss-border);
+  --bs-btn-color: var(--ss-text);
+  --bs-btn-hover-bg: #c9d6ef;
+  --bs-btn-hover-border-color: #c9d6ef;
+  --bs-btn-active-bg: #c9d6ef;
+  --bs-btn-active-border-color: #c9d6ef;
+}
+
+.ss-product-card {
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.ss-product-card:hover {
+  box-shadow: 0 8px 24px rgba(18, 28, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.ss-product-card .card-title {
+  min-width: 0;
+}
+
+.ss-product-image {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding: 0.75rem;
+  background-color: var(--ss-surface);
+}
+
+.ss-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ss-badge-discount {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background-color: #ffdad6;
+  color: var(--ss-danger);
+}
+
+.ss-badge-warning {
+  background-color: #ffdeac;
+  color: #6b4600;
+}
+
+.ss-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ss-success);
+}
+
+.ss-price {
+  color: var(--ss-success);
+}
+
+.ss-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ss-stars {
+  display: inline-flex;
+  gap: 0.15rem;
+  color: var(--ss-success);
+}
+
+.ss-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  background-color: var(--ss-border);
+  color: var(--ss-primary);
+}
+
+.ss-pagination {
+  gap: 0.35rem;
+}
+
+.ss-pagination .page-link {
+  min-width: 2.5rem;
+  margin-left: 0 !important;
+  border: 0;
+  border-radius: var(--bs-border-radius) !important;
+  background-color: transparent;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ss-pagination .page-item.active .page-link {
+  background-color: var(--ss-primary);
+  color: #fff;
+}
+
+.ss-breadcrumb {
+  --bs-breadcrumb-divider: "›";
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.ss-breadcrumb a {
+  color: var(--ss-text-muted);
+  text-decoration: none;
+}
+
+.ss-breadcrumb a:hover {
+  color: var(--ss-primary);
+}
+
+.ss-breadcrumb .breadcrumb-item.active {
+  color: var(--ss-text);
+  font-weight: 600;
+}
+
+.ss-gallery-main {
+  aspect-ratio: 1 / 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid var(--ss-border);
+  border-radius: var(--bs-border-radius-lg);
+}
+
+.ss-thumbs {
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.ss-thumb {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  padding: 0.25rem;
+  border: 2px solid transparent;
+  border-radius: var(--bs-border-radius);
+  background-color: var(--ss-surface);
+}
+
+@media (min-width: 768px) {
+  .ss-gallery-main {
+    aspect-ratio: auto;
+    height: 440px;
+  }
+
+  .ss-thumbs {
+    max-height: 440px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+.ss-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+.ss-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ss-thumb.active {
+  border-color: var(--ss-primary);
+}
+
+.ss-description {
+  color: var(--ss-text-muted);
+  line-height: 1.7;
+}
+
+.ss-highlight-icon {
+  color: var(--ss-success);
+}
+
+.ss-tabs {
+  border-bottom: 1px solid var(--ss-border);
+}
+
+.ss-tabs .nav-link {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ss-text-muted);
+  font-weight: 500;
+}
+
+.ss-tabs .nav-link.active {
+  background-color: transparent;
+  border-bottom-color: var(--ss-primary);
+  color: var(--ss-primary);
+  font-weight: 600;
+}
+
+.ss-category-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.25rem 0.75rem;
+  border-radius: var(--bs-border-radius-lg);
+  background-color: var(--ss-border);
+  color: var(--ss-text);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.ss-category-tile svg {
+  color: var(--ss-primary);
+}
+
+.ss-category-tile:hover {
+  background-color: var(--ss-primary);
+  color: #fff;
+}
+
+.ss-category-tile:hover svg {
+  color: #fff;
+}
