@@ -1,0 +1,147 @@
+.ss-card {
+  background-color: #fff;
+  border: 1px solid var(--ss-border);
+  border-radius: var(--bs-border-radius-lg);
+  box-shadow: 0 1px 2px rgba(18, 28, 42, 0.04);
+}
+
+.ss-auth-page {
+  background: radial-gradient(circle at center, #e6eafd 0%, var(--ss-bg) 70%);
+}
+
+.ss-auth-card {
+  max-width: 480px;
+  padding: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .ss-auth-card {
+    padding: 2.5rem;
+  }
+}
+
+.ss-field {
+  position: relative;
+}
+
+.ss-field .form-control {
+  height: 3rem;
+  background-color: var(--ss-bg);
+}
+
+.ss-field .form-control.has-icon {
+  padding-left: 2.75rem;
+}
+
+.ss-field:has(.ss-field-toggle) .form-control {
+  padding-right: 3rem;
+}
+
+.ss-field .form-control.is-invalid {
+  background-image: none;
+}
+
+.ss-field-icon {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  transform: translateY(-50%);
+  color: var(--ss-text-muted);
+  pointer-events: none;
+}
+
+.ss-field-toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 1.5rem;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: var(--ss-text-muted);
+  padding: 0.25rem;
+}
+
+.ss-field-toggle:hover {
+  color: var(--ss-primary);
+}
+
+.ss-account-nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: var(--bs-border-radius);
+  background: none;
+  color: var(--ss-text-muted);
+  font-weight: 500;
+  text-align: left;
+}
+
+.ss-account-nav .nav-link.active {
+  background-color: var(--ss-primary);
+  color: #fff;
+}
+
+.ss-account-nav .ss-signout {
+  color: var(--ss-danger);
+}
+
+.ss-account-nav .ss-signout:hover {
+  background-color: rgba(186, 26, 26, 0.08);
+}
+
+.ss-avatar-lg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  background-color: var(--ss-surface);
+  box-shadow: 0 4px 12px rgba(18, 28, 42, 0.12);
+}
+
+.ss-badge-mint {
+  background-color: var(--ss-mint);
+  color: #00513a;
+}
+
+.ss-badge-soft {
+  background-color: var(--ss-border);
+  color: var(--ss-text-muted);
+}
+
+.ss-info-list {
+  margin: 0;
+}
+
+.ss-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--ss-border);
+}
+
+.ss-info-row:last-child {
+  border-bottom: 0;
+}
+
+.ss-info-row dt {
+  font-weight: 500;
+  color: var(--ss-text-muted);
+}
+
+.ss-info-row dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.ss-demo-accounts {
+  padding: 0.75rem 1rem;
+  background-color: var(--ss-surface);
+  border: 1px solid var(--ss-border);
+  border-radius: var(--bs-border-radius);
+}
